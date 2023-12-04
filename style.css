@@ -1,8 +1,8 @@
 
 .container-fluid
 { 
+  flex-wrap: nowrap;
   width: 100%;
-   
     width: 100%;
     height: 70px;
     box-shadow: 0 3px 5px rgb(9, 9, 9);
@@ -15,17 +15,30 @@
 }
 
 .navbar-menu {
+   display: flex;       
+   flex-wrap: nowrap; 
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 0;
     margin-right: auto;
 }
 
+.container-button{
+  display: flex;       
+   flex-wrap: nowrap; 
+
+}
+
+
 .navbar-menu li {
-    display: inline-block;
+  
+  margin: 0px;
+    display: inline-flex;       
+  
 }
 
 .navbar-menu li a{
+
     display: inline-block;
     color:black;
     opacity: 0.6;
@@ -50,7 +63,9 @@
     color:red;
 }
 
-.callback{
+.callback{ 
+  display: flex;
+  flex-wrap: nowrap; 
   margin-left: 30px;
   padding: 10px 30px;
   background-color: red;
@@ -67,6 +82,7 @@
   }
 
     .shop{
+      height: 40px; 
     margin-left: 30px;
   padding: 10px 30px;
   background-color: red;
@@ -81,3 +97,9 @@
     transform:scale(1.10);
     box-shadow: 0 9px 6px rgb(255,0,0,.2);
   }
+  @media screen and (max-width: 1024px) {
+    .shop, .callback {
+      margin-left: 5px;
+    }
+  }
+  
