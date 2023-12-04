@@ -34,7 +34,7 @@
 }
 
 .navbar-menu li a{
-
+   
     display: inline-block;
     color:black;
     opacity: 0.6;
@@ -56,7 +56,7 @@
 }
 
 .navbar-brand:hover {
-    color:red;
+    color:rgb(125,238,47);
 }
 
 .callback{ 
@@ -64,7 +64,7 @@
   flex-wrap: nowrap; 
   margin-left: 30px;
   padding: 10px 30px;
-  background-color: red;
+  background-color: rgb(125,238,47);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgb(255,0,0,.2);
   color:black;
@@ -74,14 +74,14 @@
 
  .callback:hover{
    transform:scale(1.04);
-   box-shadow: 0 9px 6px rgb(255,0,0,.2);
+   box-shadow: 0 9px 6px rgb(125,238,47,.2);
   }
 
     .shop{
       height: 40px; 
     margin-left: 30px;
   padding: 10px 30px;
-  background-color: red;
+  background-color: rgb(125,238,47);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgb(255,0,0,.2);
   color:black;
@@ -91,12 +91,52 @@
 
   .shop:hover{
     transform:scale(1.10);
-    box-shadow: 0 9px 6px rgb(255,0,0,.2);
+    box-shadow: 0 9px 6px rgb(125,238,47,.2);;
   }
   @media screen and (max-width: 1024px) {
     .shop, .callback {
       margin-left: 5px;
     }
   }
-  
+  /* maim */
+  .row {
+    display: flex;
+    align-items: stretch;
+  }
+   .header-pizza{
+    display: flex;
+    justify-content: space-between ;
+    align-items: flex-end;
+   }
+   .Section-piza{
+    margin: 30px;
+   }
+   
+   .info-about{
+    display: flex;
+    max-width: 100%;
+    margin: 2px;
+   }
+   .info-prise{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+   }
+   .products {
+   
+    border: 1px solid #000;
+    background-color: rgb(250,249,249);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .add-to-card{
+    background-color:rgb(125,238,47) ;
+  }
+  img{
+    width: 200px;
+    height:200px;
+
+  }
+ 
 
