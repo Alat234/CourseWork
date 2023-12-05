@@ -99,44 +99,59 @@
     }
   }
   /* maim */
-  .row {
+  
+  .header-pizza {
     display: flex;
-    align-items: stretch;
-  }
-   .header-pizza{
-    display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     align-items: flex-end;
-   }
-   .Section-piza{
+  }
+  
+  .Section-piza {
     margin: 30px;
-   }
-   
-   .info-about{
+  }
+  
+  .info-about {
     display: flex;
     max-width: 100%;
     margin: 2px;
-   }
-   .info-prise{
+  }
+  
+  .info-prise {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    
+    align-items: flex-start;
+  }
+  
+   .container-p{
+    display: flex;
+    flex: 1 0 20% ;
+    flex-wrap: nowrap;
    }
-   .products {
-   
+  
+  .products {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
     border: 1px solid #000;
-    background-color: rgb(250,249,249);
+    background-color: rgb(250, 249, 249);
     padding: 10px;
     border-radius: 10px;
   }
-  .add-to-card{
-    background-color:rgb(125,238,47) ;
+  
+  .add-to-card {
+    background-color: rgb(125, 238, 47);
   }
-  img{
-    width: 200px;
-    height:200px;
+  
+  img {
+    width: 200;
+    height: auto; 
+    border-radius: 10px; 
+  }
 
+  @media screen and (max-width: 1200px) and (min-width: 769px) {
   }
- 
+
+
+  
 
