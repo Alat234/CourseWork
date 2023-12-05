@@ -160,7 +160,7 @@
         max-width: calc(33.333% - 20px); 
     }
 }
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 769px)  {
   .products {
       flex: 1 0 calc(100% - 20px); 
       max-width: calc(100% - 20px); 
