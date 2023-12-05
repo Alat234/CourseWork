@@ -156,14 +156,14 @@
   }
   @media screen and (max-width: 1200px) and (min-width: 769px) {
     .products {
-        flex: 1 0 calc(33.333% - 20px); /* Розрахунок ширини для 5 елементів в ряду, враховуючи відступи */
-        max-width: calc(33.333% - 20px); /* Максимальна ширина, враховуючи відступи */
+        flex: 1 0 calc(33.333% - 20px); 
+        max-width: calc(33.333% - 20px); 
     }
 }
 @media screen and (max-width: 768px)  {
   .products {
-      flex: 1 0 calc(100% - 20px); /* Розрахунок ширини для 5 елементів в ряду, враховуючи відступи */
-      max-width: calc(100% - 20px); /* Максимальна ширина, враховуючи відступи */
+      flex: 1 0 calc(100% - 20px); 
+      max-width: calc(100% - 20px); 
   }
 }
  
