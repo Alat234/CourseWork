@@ -104,10 +104,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0.5%;
   }
   
   .Section-piza {
-    margin: 30px;
+    margin: 3%;
   }
   
   .info-about {
@@ -122,34 +123,51 @@
     justify-content: space-between;
   }
   
-   .container-p{
+  .container-p {
     display: flex;
-    flex: 1 0 20% ;
-    flex-wrap: nowrap;
-   }
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
   
-  .products {
-    display: flex;
-    margin: 10px;
-    flex-direction: column;
-    border: 1px solid #000;
-    background-color: rgb(250, 249, 249);
-    padding: 10px;
-    border-radius: 10px;
-  }
+.products {
+  flex: 1 0 calc(20% - 20px); 
+  max-width: calc(20% - 20px); 
+  margin: 10px; 
+  border: 1px solid #000;
+  background-color: rgb(250, 249, 249);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
   
   .add-to-card {
     background-color: rgb(125, 238, 47);
   }
-  
-  img {
-    width: 200;
+   img{
+    width: 100%;
+   }
+  .image {
+    width:100%;
     height: auto; 
     border-radius: 10px; 
   }
-
   @media screen and (max-width: 1200px) and (min-width: 769px) {
+    .products {
+        flex: 1 0 calc(33.333% - 20px); /* Розрахунок ширини для 5 елементів в ряду, враховуючи відступи */
+        max-width: calc(33.333% - 20px); /* Максимальна ширина, враховуючи відступи */
+    }
+}
+@media screen and (max-width: 768px)  {
+  .products {
+      flex: 1 0 calc(100% - 20px); /* Розрахунок ширини для 5 елементів в ряду, враховуючи відступи */
+      max-width: calc(100% - 20px); /* Максимальна ширина, враховуючи відступи */
   }
+}
+ 
+
 
 
   
